@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using BioEngine.Core.Pages.Entities;
 using BioEngine.Core.Repository;
+using BioEngine.Pages.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace BioEngine.Core.Pages.Db
+namespace BioEngine.Pages.Db
 {
     public class PagesRepository : ContentEntityRepository<Page>
     {

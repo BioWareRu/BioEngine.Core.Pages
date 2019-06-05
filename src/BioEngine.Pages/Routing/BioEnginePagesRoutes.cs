@@ -1,4 +1,4 @@
-namespace BioEngine.Core.Pages.Routing
+namespace BioEngine.Pages.Routing
 {
     public static class BioEnginePagesRoutes
     {

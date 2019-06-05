@@ -1,15 +1,15 @@
 using BioEngine.Core.API;
 using BioEngine.Core.Modules;
-using BioEngine.Core.Pages.Entities;
-using BioEngine.Core.Pages.Search;
-using BioEngine.Core.Pages.SiteMaps;
 using BioEngine.Core.Search;
+using BioEngine.Pages.Entities;
+using BioEngine.Pages.Search;
+using BioEngine.Pages.SiteMaps;
 using cloudscribe.Web.SiteMap;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace BioEngine.Core.Pages
+namespace BioEngine.Pages
 {
     public class PagesModule : BaseBioEngineModule
     {

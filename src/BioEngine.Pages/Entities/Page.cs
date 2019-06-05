@@ -2,9 +2,9 @@
 using BioEngine.Core.Abstractions;
 using BioEngine.Core.DB;
 using BioEngine.Core.Entities;
-using BioEngine.Core.Pages.Routing;
+using BioEngine.Pages.Routing;
 
-namespace BioEngine.Core.Pages.Entities
+namespace BioEngine.Pages.Entities
 {
     [TypedEntity("page")]
     public class Page : ContentItem<PageData>

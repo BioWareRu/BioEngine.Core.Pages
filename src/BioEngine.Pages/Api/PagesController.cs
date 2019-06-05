@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using BioEngine.Core.API;
 using BioEngine.Core.DB;
 using BioEngine.Core.Entities;
-using BioEngine.Core.Pages.Db;
-using BioEngine.Core.Pages.Entities;
 using BioEngine.Core.Repository;
 using BioEngine.Core.Web;
+using BioEngine.Pages.Db;
+using BioEngine.Pages.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BioEngine.Core.Pages.Api
+namespace BioEngine.Pages.Api
 {
     public class PagesController : ContentEntityController<Page, PagesRepository, Entities.Page, Entities.Page>
     {
