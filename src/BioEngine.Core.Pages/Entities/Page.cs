@@ -2,7 +2,7 @@
 using BioEngine.Core.Abstractions;
 using BioEngine.Core.DB;
 using BioEngine.Core.Entities;
-using BioEngine.Core.Routing;
+using BioEngine.Core.Pages.Routing;
 
 namespace BioEngine.Core.Pages.Entities
 {
@@ -10,7 +10,7 @@ namespace BioEngine.Core.Pages.Entities
     public class Page : ContentItem<PageData>
     {
         public override string TypeTitle { get; } = "Страница";
-        [NotMapped] public override string PublicRouteName { get; set; } = BioEngineCoreRoutes.Page;
+        [NotMapped] public override string PublicRouteName { get; set; } = BioEnginePagesRoutes.Page;
     }
 
     public class PageData : ITypedData
