@@ -11,9 +11,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BioEngine.Pages.Api
 {
-    public class PagesController : ContentEntityController<Page, PagesRepository, Entities.Page, Entities.Page>
+    public abstract class
+        ApiPagesController : ContentEntityController<Page, PagesRepository, Entities.Page, Entities.Page>
     {
-        public PagesController(BaseControllerContext<Page, PagesRepository> context,
+        protected ApiPagesController(BaseControllerContext<Page, PagesRepository> context,
             BioEntitiesManager entitiesManager, ContentBlocksRepository blocksRepository) : base(context,
             entitiesManager, blocksRepository)
         {
