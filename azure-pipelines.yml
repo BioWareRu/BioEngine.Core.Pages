@@ -49,11 +49,11 @@ steps:
           versioningScheme: byEnvVar
           versionEnvVar: 'Version'
 
-    - task: DotNetCoreCLI@2
+    - task: NuGetCommand@2
       displayName: 'Push package to nuget'
       inputs:
           command: 'push'
-          packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+          packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
           nuGetFeedType: 'external'
           publishFeedCredentials: 'BRC Nuget'
           
