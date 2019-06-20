@@ -41,7 +41,7 @@ steps:
           packDirectory: '$(build.artifactStagingDirectory)'
 
     - task: DotNetCoreCLI@2
-      displayName: 'Push package to local feed'
+      displayName: 'Push package to internal feed'
       inputs:
           command: push
           nuGetFeedType: 'internal'
