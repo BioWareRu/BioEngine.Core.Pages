@@ -1,3 +1,5 @@
+# This repo is merged to https://github.com/BioWareRu/BioEngine.Core
+
 # Модуль Pages
 
 Реализация контентной сущности `Страница` для BioEngine. Подходит для создания страниц с фиксированным адресом, не входящих в разделы и ленты
